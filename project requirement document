@@ -1,0 +1,52 @@
+# Project Requirements
+
+As an HR manager, I want a Tableau dashboard to analyze workforce data through summary views for high-level insights and employee records for detailed analysis.
+
+## Summary View (Overview, Demographics, Income)
+
+### Overview
+- Display the total number of employees hired, currently active, and terminated.
+- Visualize hiring and termination trends over the years.
+- Break down employees by department and job title.
+- Compare employees at headquarters (New York) with those in branch offices.
+- Show employee distribution by city and state.
+
+### Demographics
+- Present the gender distribution across the company.
+- Analyze employees by age group and education level.
+- Show employee counts for each age group and education level.
+- Explore the relationship between education level and performance rating.
+
+### Income
+- Compare salaries by education level and gender to identify salary differences.
+- Analyze the relationship between employee age and salary across departments.
+
+---
+
+## Employee Records View
+
+- Display employee details, including name, department, job title, gender, age, education level, and salary.
+- Allow users to filter employee records using the available fields.
+
+---
+
+## Dataset Overview
+
+The dataset contains 8,950 synthetic HR records generated using Python. It includes employee demographics, employment dates, departments, job titles, education levels, performance ratings, overtime status, and salary information.
+
+The dataset was created with the help of ChatGPT and a Python script (`generate_data.py`) and is stored in `dataset.csv`.
+
+### Data Generation Requirements
+
+The Python script generates realistic synthetic HR data with the following attributes:
+
+- Employee ID: Unique identifier for each employee.
+- Personal Details: Randomly generated first and last names, gender, birth date, city, and state.
+- Employment Details: Hire date, termination date, department, and job title.
+- Demographics:Education level and age group.
+- Performance:Performance ratings ranging from Excellent to Needs Improvement.
+- Overtime: Assigned using a predefined probability.
+- Salary:** Generated within salary ranges based on department and job title.
+- Adjusted Salary: Salary adjusted using predefined gender, education, and age multipliers.
+
+The script uses functions and comments to keep the code organized and explain the data-generation process.
